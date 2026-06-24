@@ -86,7 +86,7 @@ python src/shine/infer.py \
 ```
 This generates `data/model_reconstructed.vtk` containing two new point data arrays:
 - **`ScarProbability`**: Reconstructed continuous scar intensity/probability.
-- **`EpistemicUncertainty`**: Model prediction uncertainty (via MC Dropout variance passes), highlighting "blind zone" gaps between slices.
+- **`EpistemicUncertainty`**: Model prediction uncertainty (via MC Dropout normalized entropy passes), highlighting "blind zone" gaps between slices.
 
 ---
 
@@ -96,3 +96,17 @@ To verify the installation and core component calculations, run `pytest`:
 pytest
 ```
 All unit tests should pass.
+
+---
+
+## ✍️ Citation
+If you find this codebase or our paper useful for your research, please cite:
+
+```bibtex
+@inproceedings{zong2026shine,
+  title={SHINE: An Entropy-Guided Digital Twin Framework for 3D Myocardial Scar Reconstruction from Sparse CMR},
+  author={Zong, Dexiang and others},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
+  year={2026}
+}
+```
