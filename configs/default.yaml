@@ -13,7 +13,7 @@ model:
   mc_passes: 50          # Number of Monte Carlo passes for uncertainty estimation
 
 loss:
-  dirichlet_weight: 0.01      # Regularization weight
+  dirichlet_weight: 0.0005      # Regularization weight (set to 5e-4 to match paper)
   uncertainty_threshold: 0.5   # Threshold above which entropy scale is applied
 
 training:
