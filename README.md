@@ -17,7 +17,7 @@ SHINE_share/
 │   ├── model.vtk             # 3D heart anatomical ventricular mesh model
 │   └── slice1.vtk            # 2D LGE-MRI slice
 ├── doc/
-│   └── Paper-4741.pdf        # Accompanying MICCAI 2026 methodology paper
+│   └── Paper-xxxx.pdf        # Accompanying MICCAI 2026 methodology paper
 ├── scripts/
 │   └── Intersect_3D_mask.py  # Script to intersect 2D slices with 3D model
 ├── src/
