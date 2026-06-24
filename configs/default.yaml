@@ -1,0 +1,25 @@
+# Configuration for SHINE Reconstruction Pipeline
+
+model:
+  name: "BayesianSIREN"
+  in_features: 3         # 3D spatial coordinates (x, y, z)
+  out_features: 1        # Reconstructed scar probability/intensity
+  hidden_features: 256
+  num_layers: 4
+  outermost_linear: true
+  first_omega_0: 30.0    # SIREN periodic activation hyperparameter
+  hidden_omega_0: 30.0   # SIREN periodic activation hyperparameter
+  dropout_rate: 0.1      # For MC Dropout (epistemic uncertainty estimation)
+  mc_passes: 50          # Number of Monte Carlo passes for uncertainty estimation
+
+loss:
+  dirichlet_weight: 0.01      # Regularization weight
+  uncertainty_threshold: 0.5   # Threshold above which entropy scale is applied
+
+training:
+  learning_rate: 0.0001
+  epochs: 1000
+  batch_size: 4096
+  device: "cuda"          # "cuda", "mps", or "cpu"
+  save_interval: 100
+  log_interval: 10

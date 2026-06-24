@@ -1,8 +1,7 @@
-# Copyright (c) 2026 Dexiang Zong. All rights reserved.
-# CardioVascular Systems Imaging and Artificial Intelligence Research Laboratory (CVS.AI)
+# written by Dexiang Zong
+# CardioVascular Systems Imaging and Artificial Intelligence (CVS.AI)
 # National Heart Research Institute Singapore (NHRIS)
-# National Heart Centre Singapore (NHCS)
-# Licensed under the MIT License.
+# national heart center singarpore
 
 from setuptools import setup, find_packages
 
